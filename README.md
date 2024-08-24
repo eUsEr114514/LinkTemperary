@@ -1,0 +1,2 @@
+# LinkTemperary
+Fast link convenience
