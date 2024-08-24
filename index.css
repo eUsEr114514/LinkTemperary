@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-block {
+    display: inline-flex; /* 使用flex容器来自动调整子元素大小 */
+    align-items: center; /* 垂直居中子元素 */
+    justify-content: center; /* 水平居中子元素 */
+    padding: 0.6em 1em; /* 使用em单位来适应字体大小 */
+    background-color: #f0f0f0;
+    margin: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.5s ease;
+    /* 移除宽度设置，让元素根据内容自动调整 */
+    white-space: nowrap; /* 防止链接文字换行 */
+}
+
+.link-block:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+    font-size: 1.5em; /* 确保链接的字体大小是em单位 */
+    display: inline-block; /* 使链接作为行内块元素，可以设置宽度和高度 */
+}
+h1 {
+    text-align: center;
+}
