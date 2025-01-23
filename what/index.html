@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>学生管理系统</h1>
+        <div id="register-section" style="display: none;">
+            <h2>用户注册</h2>
+            <input type="text" id="register-username" placeholder="用户名">
+            <input type="password" id="register-password" placeholder="密码">
+            <button onclick="register()">注册</button>
+        </div>
+
+        <div id="login-section">
+            <h2>用户登录</h2>
+            <input type="text" id="username" placeholder="用户名">
+            <input type="password" id="password" placeholder="密码">
+            <button onclick="login()">登录</button>
+            <button onclick="showRegister()">注册新账号</button>
+        </div>
+
+        <div id="main-section" style="display: none;">
+            <h2>学生信息管理</h2>
+            <div>
+                <h3>添加学生信息</h3>
+                <input type="text" id="student-id" placeholder="姓名">
+                <input type="text" id="student-name" placeholder="外号">
+                <input type="text" id="student-class" placeholder="简介">
+                <button onclick="addStudent()">添加</button>
+            </div>
+
+            <div>
+                <h3>查询学生信息</h3>
+                <input type="text" id="search-id" placeholder="输入姓名查询">
+                <button onclick="searchStudent()">查询</button>
+            </div>
+
+            <div>
+                <h3>学生列表</h3>
+                <ul id="student-list"></ul>
+            </div>
+
+            <div>
+                <button onclick="exportData()">导出数据到文本文件</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
