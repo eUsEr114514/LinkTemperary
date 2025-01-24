@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>学生管理系统</h1>
+        <div>
+            <h3>添加学生信息</h3>
+            <input type="text" id="student-id" placeholder="学号">
+            <input type="text" id="student-name" placeholder="姓名">
+            <input type="text" id="student-class" placeholder="班级">
+            <button onclick="addStudent()">添加</button>
+        </div>
+
+        <div>
+            <h3>学生列表</h3>
+            <ul id="student-list"></ul>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
